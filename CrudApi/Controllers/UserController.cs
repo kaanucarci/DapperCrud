@@ -1,5 +1,5 @@
 using CrudApi.Models;
-using CrudApi.Repositories;
+using CrudApi.Repositories.Abstracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CrudApi.Controllers;
@@ -45,7 +45,7 @@ public class UserController : ControllerBase
 
         user.Id = id;
         await _repository.Update(user);
-        return NoContent();
+        return Ok(user);
     }
 
     [HttpDelete("{id}")]
@@ -54,8 +54,11 @@ public class UserController : ControllerBase
         var user = await _repository.GetById(id);
         if (user == null) return NotFound();
 
-        await _repository.Delete(id);
-        return NoContent();
+        var rows = await _repository.Delete(id);
+        if (rows == 0)
+            return NotFound(new {message = "User not deleted"});
+        
+        return  Ok(new {message = "User deleted"});
     }
  
 }

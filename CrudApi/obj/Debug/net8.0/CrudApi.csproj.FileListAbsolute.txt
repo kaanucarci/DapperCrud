@@ -78,3 +78,4 @@
 /Users/kaanucarci/Desktop/c#/DapperCrud/CrudApi/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll
 /Users/kaanucarci/Desktop/c#/DapperCrud/CrudApi/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll
 /Users/kaanucarci/Desktop/c#/DapperCrud/CrudApi/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll
+/Users/kaanucarci/Desktop/c#/DapperCrud/CrudApi/obj/Debug/net8.0/CrudApi.sourcelink.json

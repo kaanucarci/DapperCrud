@@ -1,5 +1,6 @@
 using CrudApi.Data;
-using CrudApi.Repositories;
+using CrudApi.Repositories.Abstracts;
+using CrudApi.Repositories.Concretes;
 
 var builder = WebApplication.CreateBuilder(args);
 
